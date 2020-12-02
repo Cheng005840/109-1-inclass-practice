@@ -1,0 +1,40 @@
+---
+title: "課?<a0>?練習模<e7><89><88>"
+author: "Cheng"
+date: "2020-12-02"
+output: output_format
+params:
+  id: "410973024"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Your code
+
+```{r}
+set.seed(2020)
+ages_chr <- sample(c("4以下","5-9","10-14","15-19"),20,replace=T)
+ages_chr
+```
+
+```{r}
+ages_fctBy5 <- 
+  factor(
+    ages_chr,
+    levels = c("4以下","5-9","10-14","15-19")
+  )
+
+levels(ages_fctBy5)
+table(ages_fctBy5)
+```
+```{r}
+ages_fctBy10 <- factor(
+  ages_chr,
+  levels = c("10以下","10以下","10以上","10以上") )
+```
+```{r}
+
+```
+
